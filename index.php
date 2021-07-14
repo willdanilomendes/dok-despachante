@@ -38,10 +38,16 @@ include_once(U . 'includes/header.php');
                     <div class="afiliado_form">
                         <form action="" method="post" id="signupForm">
                             <div class="mb-3">
-                                <input type="text" class="form-control form-default" id="nome" placeholder="Informe seu Nome">
+                                <input type="text" for="nome" class="form-control form-default" id="nome" placeholder="Informe seu Nome">
+                                <div class="valid-feedback">
+                                    <span class="text-white">Tudo certo!</span>
+                                </div>
                             </div>
                             <div class="mb-4">
-                                <input type="email"  class="form-control form-default" id="email" placeholder="Informe seu E-mail">
+                                <input type="email" for="email"  class="form-control form-default" id="email" id="email" placeholder="Informe seu E-mail">
+                                <div class="valid-feedback">
+                                <span class="text-white">Tudo certo!</span>
+                                </div>
                             </div>
                             <div class="mb-3">
                                 <button type="submit" class="btn btn__green">Sim, quero ser um afiliado</button>
@@ -53,7 +59,6 @@ include_once(U . 'includes/header.php');
         </div>
     </section>
 <!-- FORM INPUT CADASTRO -->
-
 
 <!-- SECTION MOTIVOS -->
 <section class="motivos">
