@@ -1,0 +1,162 @@
+/* home principal */ 
+.header{
+    background: url(../imgs/carros_avenida.png) center center no-repeat;
+    background-size: cover;
+    height: 520.9px;
+
+    @media (max-width: $mobile) {
+        height: auto;
+    }
+
+    &__title{
+        color: $color-brand-red;
+        font-size: 55px;
+        font-weight: 700;
+        @media (max-width: $mobile) {
+           text-align: center;
+           font-size: 33px;
+        }
+    }
+
+    .img-matheus{
+        @media (max-width: $mobile) {
+            position: relative;
+            bottom: -17px;
+        }
+    }
+}
+
+/* form afiliado */ 
+
+.afiliado{
+    background: $color-brand-red;
+    padding: 100px;
+
+    @media (max-width: $mobile) {
+        padding: 35px 0;
+    }
+
+    &_form{
+        background: #c42427;
+        border-radius: 35px;
+        padding: 60px;
+        @media (max-width: $mobile) {
+            padding: 30px 20px;
+        }
+    }
+
+    .btn__green{
+        width: 100%;
+    }
+}
+
+/* section motivos */ 
+
+.motivos{
+    padding: 100px 0;
+
+
+    @media (max-width: $mobile) {
+        padding: 10px 0;
+    }
+
+    &__title{
+        color: $color-brand-grey;
+        font-weight: 600;
+        text-align: center;
+        margin: 0  0 40px 0;
+
+        @media (max-width: $mobile) {
+            font-size: 25px;
+        }
+    }
+
+    &__card{
+        background: $color-bg-grey;
+        border-radius: 20px;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        margin: 0 0 15px 0;
+        @media (max-width: $mobile) {
+           display: block;
+           align-items: center;
+           text-align: center;
+        }
+
+        &__icon{
+            img{
+                width: 100px;
+            }
+        }
+
+        &__text{
+            margin: 0 55px;
+            @media (max-width: $mobile) {
+                margin: 0 5px;
+             }
+
+            p{
+                font-size: 20px;
+                color: $color-brand-grey;
+            }
+        }
+    }
+}
+
+/* INFORMATIVO SEC */ 
+.informativo{
+    background: $color-brand-red;
+    padding: 50px 0;
+
+    &__title{
+        color: white;
+        font-weight: 600;
+        font-size: 50px;
+        @media (max-width: $mobile) {
+            font-size: 30px;
+            text-align: center;
+            margin: 0 0 20px;
+        }
+    }
+
+    &__subTitle{
+        color: white;
+        font-size: 30px;
+
+        @media (max-width: $mobile) {
+            font-size: 22px;
+            text-align: center;
+            margin: 0 0 30px;
+        }
+    }
+}
+
+/*  INFORMAÇÕES  */ 
+.informacoes, .afiliado-informacoes{
+    padding: 50px 0;
+
+    &__title{
+        color: $color-brand-grey;
+        font-weight: 600;
+        text-align: center;
+        margin: 0  0 40px 0;
+    }
+
+    // Pararagh change to reg
+    &__text--red{
+        color: $color-brand-red;
+        font-size: 29px;
+        @media (max-width: $mobile) {
+            font-size: 18px;
+        }
+    }
+
+    &__text{
+        color: $color-brand-grey;
+        font-size: 29px;
+        @media (max-width: $mobile) {
+            font-size: 18px;
+        }
+    }
+}
